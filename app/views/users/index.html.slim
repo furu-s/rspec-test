@@ -1,0 +1,13 @@
+div.container
+  div.row
+    div.col-md-12
+      table.table.table-bordered.table-striped
+        tr
+          th ID
+          th 名前
+          th メールアドレス
+        - @users.each do |user|
+          tr
+            th = user.id
+            th = user.name
+            th = user.email
